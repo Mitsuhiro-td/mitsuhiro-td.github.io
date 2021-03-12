@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="subresource" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
   </head>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -136,26 +139,23 @@
   <footer>
     <div class="text-center bs-docs-section" style="color: lightslategrey;"><p>General</p></div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
   <script>
-    $(function(){
-      $('a[href^="#"]').click(function(){
-        var speed = 500;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top - 85;
-        $("html, body").animate({scrollTop:position}, speed, "swing");
-        return false;
+      $(function(){
+        $('a[href^="#"]').click(function(){
+          var speed = 500;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 85;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+        $('#navbar').on('click', function(event) {
+          $('.navToggle').trigger('click');
+        });
       });
-      $('#navbar').on('click', function(event) {
-        $('.navToggle').trigger('click');
+      lazyload();
+      $(window).on('load', function() {
+      $('link[rel="subresource"]').attr('rel', 'stylesheet');
       });
-    });
-    lazyload();
-    $(window).on('load', function() {
-    $('link[rel="subresource"]').attr('rel', 'stylesheet');
-    });
-  </script>
-  <script src="./js/bootstrap.min.js"></script>
+    </script>
 </html>
