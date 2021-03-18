@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="@mitsuhiro_em">
+    <meta name="description" content="光裕のページです。">
+    <meta property="og:url" content="https://mitsuhiro-td.github.io/rail.html" />
+    <meta property="og:title" content="光裕の自己紹介" />
+    <meta property="og:description" content="好きなものが多すぎて追いきれなくなった人間" />
+    <meta property="og:site_name" content="Mitsuhiro" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    
+    <link rel="icon" href="favicon_c.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon_c.ico" type="image/x-icon" />
+
+    <title>Mitsuhiro</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+    
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function(){
+          var speed = 500;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 85;
+            $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+        $('#navbar').on('click', function(event) {
+          $('.navToggle').trigger('click');
+        });
+      });
+      $(window).on('load', function() {
+      $('link[rel="subresource"]').attr('rel', 'stylesheet');
+      });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/ct.css">
+    <style type="text/css">
+      .bs-docs-section {
+      margin-top: 8em;
+      } 
+    </style>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="https://mitsuhiro-td.github.io/rail.html">
+            <img src="img/iconWB.webp" width="30" height="30" class="d-inline-block align-top mr-1" alt="猫のアイコン">
+            光裕
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#profile"><i class="fas fa-address-card"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tools"><i class="fas fa-laptop"></i> Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+  </header>
+  <body>
+    <div style="font-size:60px;"><br></div>
+    <div class="container">
+      <br>
+      <div class="text-right">
+        <img src="img/icon.svg" width="160px" height="105px" class="rounded-right m-2">
+      </div>
+      <div class="lead">
+        <p>小学生のときに調布に行ったとき、
+          券売機に全く並ばずに改札機にきっぷも入れずに何かをタッチして人々が改札機を通り抜けていく様子を見て不思議さを感じ、
+          Suicaの運賃計算方法や特例、エリア区分などを調べるなどしていくうちに、<br>
+          交通系電子マネーだけでなく発車表や車内LCD、駅や車内の自動放送等の旅客案内も好きで調べるようになり現在に至ります。</p>
+        <p>これ、何鉄って言うんでしょうね……</p>
+      </div>
+      <section id="profile" class="bs-docs-section">
+        <h1><i class="fas fa-address-card"></i> プロフィール</h1>
+        <table class="table table-striped">
+          <tbody>
+            <tr><td>名前</td><td>藤堂光裕<br><br>ユーザー名であり実名ではありません</td></tr>
+            <tr><td>趣味</td><td>鉄道(交通系IC, 旅客案内), ライトノベル, アニメ, Twitter</td></tr>
+            <tr><td>エリア</td><td>JR東日本エリア<br><br>エリア内を結構頻繫に移動してます</td></tr>
+            <tr><td>好きな路線<nobr>(営業上の呼称)</nobr></td><td>中央線快速, 仙山線, 東北新幹線</td></tr>
+            <tr><td>好きな車輛</td><td>E233系0番台, E233系1000番台, E721系, E5系</td></tr>
+            <tr><td>好きな<nobr>電子マネー</nobr></td><td>Suica, nanaco, icsca</td></tr>
+            <tr><td>好きな<nobr>ラノベ</nobr></td><td>青春ブタ野郎シリーズ, 三角の距離は限りないゼロ, さくら荘のペットな彼女</td></tr>
+            <tr><td>好きな<nobr>キャラ</nobr></td><td>桜島麻衣, 渋谷凛, 牧之原翔子, 風鳴翼, 長光麻夜</td></tr>
+            </tbody>
+          </table>
+        <div class="lead">
+          <br><p>たまにSuicaの残高で遊んだりしてます。</p>
+          <p>地方の鉄は体力異様にある人が多いですが、私は体力テスト万年Eです。</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="lazyload card-img-bottom" data-src="img\1024.webp" alt="Suica 残高 1024円" />
+              <figcaption>好きな数字は2ⁿ</figcaption>
+            </div>
+            <div class="col-lg-6">
+              <img class="lazyload card-img-bottom" data-src="img\346.webp" alt="Suica 残高 346円" />
+              <figcaption>これはアイドルマスターシンデレラガールズ</figcaption>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="lazyload card-img-bottom" data-src="img\aobtKb.webp" alt="部屋の壁" />
+              <figcaption>自室の壁</figcaption>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="bs-docs-section">
+        <h1><i class="fas fa-laptop"></i> 環境</h1>
+        <table class="table table-striped">
+            <tbody><tr><td>端末</td><td>DellのBTOのノート<br>iPhone SE (2nd generation)</td></tr>
+            <tr><td><nobr>ブラウザ</nobr></td><td>Google Chrome</td></tr>
+            <tr><td>ペイント</td><td>CLIP STUDIO PAINT PRO</td></tr>
+            <tr><td>画像編集</td><td>iOSの写真アプリ（現像）<br>CLIP STUDIO PAINT PRO（コラ画像）</td></tr>
+            <tr><td>動画編集</td><td>filmoreX</td></tr>
+            <tr><td>音声編集</td><td>filmoreX（用途違う）</td></tr>
+            <tr><td>エディタ</td><td>Visual Studio Code</td></tr>
+          </tbody></table>
+        <div class="lead"><p>Twitterに上げてるものはだいたいiPhone SEで撮ったものです。</p></div>
+      </section>
+      <section id="Twitter" class="bs-docs-section">
+        <h1><i class="fab fa-twitter"></i> Twitter</h1>
+        <div class="text-center" alt="twitter-timeline">
+          <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/mitsuhiro_em?ref_src=twsrc%5Etfw">Tweets by mitsuhiro_em</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </section>
+    </div>
+    <script>lazyload();</script>
+  </body>
+  <footer>
+    <div class="text-center bs-docs-section" style="color: lightslategrey;"><p>Railway</p></div>
+  </footer>
+  <link rel="subresource" type="text/css" href="css/bootstrap.min.css">
+  <link rel="subresource" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</html>
