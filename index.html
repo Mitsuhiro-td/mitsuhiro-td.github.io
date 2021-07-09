@@ -18,8 +18,7 @@
     <title>Mitsuhiro</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>    
     <script>
       $(function(){
         $('a[href^="#"]').click(function(){
@@ -110,11 +109,11 @@
           <p>円盤も全部揃えています</p>
           <div class="row">
             <div class="col-lg-6">
-              <img class="lazyload card-img-bottom" data-src="img\aobtGs.webp" alt="青ブタグッズの数々" />
+              <img class="card-img-bottom" style="max-width: 100%;" loading="lazy" src="img\aobtGs.webp" alt="青ブタグッズの数々" />
               <figcaption>原作、円盤等々</figcaption>
             </div>
             <div class="col-lg-6">
-              <img class="lazyload card-img-bottom" data-src="img\aobtKb.webp" alt="部屋の壁" />
+              <img class="card-img-bottom" style="max-width: 100%;" loading="lazy" src="img\aobtKb.webp" alt="部屋の壁" />
               <figcaption>自室の壁</figcaption>
             </div>
           </div>
@@ -155,7 +154,6 @@
         </div>
       </section>
     </div>
-    <script>lazyload();</script>
   </body>
   <footer>
     <div class="text-center bs-docs-section" style="color: lightslategrey;"><p>General</p></div>
